@@ -1,7 +1,12 @@
 #!/bin/sh
 apt update
-apt-get install apache2
-apt-get install git
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:team-xbmc/ppa
+apt update 
+sudo apt-get install kodi
+apt upgrade
+apt install apache2
+apt install git
 echo apache-version
 #read -p "click enter to continue on to the next step"
 apt-get install ufw
