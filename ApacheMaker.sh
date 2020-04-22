@@ -38,5 +38,5 @@ sudo a2ensite caden.local.conf
 sudo a2dissite 000-default.conf
 sudo systemctl restart apache2
 sudo apache2ctl configtest
-wait -n 5 ./sync.sh
+watch -n 5 ./sync.sh
 exit
